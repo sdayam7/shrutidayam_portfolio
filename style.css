@@ -1,0 +1,146 @@
+/* Shruti Dayam Portfolio - style.css */
+
+/* === Light/Dark Theme Variables === */
+:root {
+  --bg: #f0f4ff;
+  --text: #333;
+  --header: #5b9bd5; /* Updated for header */
+  --nav: #2c3e50;
+  --card: #ffffff;
+  --shadow: #ccc;
+}
+
+.dark-mode {
+  --bg: #1a1a1a;
+  --text: #f0f0f0;
+  --header: #222;
+  --nav: #000;
+  --card: #2a2a2a;
+  --shadow: #444;
+}
+
+/* === Base Styling === */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* === Header === */
+header {
+  background-color: var(--header);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  position: relative;
+}
+
+/* === Theme Toggle Button === */
+#theme-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  padding: 5px 12px;
+  font-size: 0.9rem;
+  background: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#theme-toggle:hover {
+  background: #e6e6e6;
+}
+
+/* === Navigation Bar === */
+nav {
+  background-color: var(--nav);
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* === Headings === */
+h2 {
+  color: #4a90e2;
+  padding-top: 1rem;
+}
+
+/* === Sections === */
+section {
+  padding: 2rem;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* === Banner Section === */
+.banner {
+  background-color: #5b9bd5; /* Light blue like header */
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  width: 100%;
+}
+
+.banner img {
+  width: 300px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* === Card-style Blocks === */
+.edu-block,
+.projects,
+.practice,
+.links {
+  margin-bottom: 2rem;
+  background: var(--card);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--shadow);
+}
+
+/* === Links === */
+a {
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* === Footer === */
+footer {
+  background-color: var(--nav);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
