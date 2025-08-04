@@ -3,24 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shruti Dayam Portfolio</title>
+    <title>Shruti Dayam | ML/AI Portfolio</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body id="top">
-    <header>
-      <h1>Shruti Dayam</h1>
-      <p>Machine Learning Engineer | AI + Robotics Enthusiast</p>
-      <button id="theme-toggle">🌙 Toggle Theme</button>
-    </header>
-
-    <section class="banner">
-      <h2>AI + Robotics + Code</h2>
-      <p>I'm building the future, one algorithm at a time 💡</p>
+    <!-- Header Section with Photo + Bio -->
+    <section class="intro-card">
+      <div class="profile-pic">
+        <img src="/images/shruti_photo.JPG" alt="Shruti Dayam" />
+      </div>
+      <div class="intro-text">
+        <h1>Shruti Dayam</h1>
+        <p>AI / ML Engineer | Robotics Enthusiast | Python | LLM | NLP</p>
+        <div class="contact-icons">
+          <a href="https://github.com/sdayam7" target="_blank">GitHub</a>
+          <a
+            href="https://linkedin.com/in/shruti-dayam-631409sd"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <a href="mailto:shruti5dayam@gmail.com">Email</a>
+        </div>
+      </div>
     </section>
 
+    <!-- Navigation Bar -->
     <nav>
       <ul>
+        <li><a href="#about">About</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#practice">Practice</a></li>
@@ -29,65 +39,132 @@
     </nav>
 
     <main>
-      <section id="education" class="education">
-        <h2>🎓 Education Journey</h2>
-        <div class="edu-block">
-          <h3>Master's in Computer Science</h3>
-          <p>
-            University of Bridgeport, Connecticut, USA<br />
-            GPA: 3.618 | 2023–2025
-          </p>
-        </div>
-        <div class="edu-block">
-          <h3>Bachelor's in Mechanical Engineering</h3>
-          <p>
-            MVSR College of Engineering, Telangana, India<br />
-            CGPA: 7.73 'PASSED WITH DISTINCTION' | 2017–2021
-          </p>
-        </div>
-        <div class="edu-block">
-          <h3>Junior College (11th & 12th)</h3>
-          <p>
-            FIITJEE Junior College, Telangana, India<br />
-            CGPA: 8.56 | Board: SSC | 2015–2017
-          </p>
-        </div>
-        <div class="edu-block">
-          <h3>Schooling (2nd–10th)</h3>
-          <p>
-            Chinmaya Vidyalaya, Telangana, India<br />
-            CGPA: 9.4 | Board: CBSE | 2007–2015
-          </p>
-        </div>
+      <!-- About Me Section -->
+      <section id="about">
+        <h2>💫 About Me</h2>
+        <p>
+          I’ve always loved solving math problems — like many Indian students,
+          engineering was the natural path for me. As a fan of Iron Man and
+          space science fiction, I developed a deep interest in robotics and
+          space technology early on.
+        </p>
+        <p>
+          While pursuing my bachelor’s in Mechanical Engineering at MVSR, I
+          explored hands-on design through SolidWorks and participated in
+          national-level vehicle competitions. During our final round at
+          Chitkara University, I worked on the vehicle’s braking system and cost
+          analysis. That experience helped me discover my strengths: I enjoyed
+          designing but felt even more drawn toward understanding logic and
+          building intelligent systems.
+        </p>
+        <h3>🧭 My Path</h3>
+        <p>
+          The COVID pandemic gave me the space to explore new skills — I took
+          part in workshops, internships, and discovered the power of data and
+          AI. During an internship on autonomous vehicles, I was amazed by how
+          machines could learn and act through just data and training. That
+          moment shifted my focus to AI.
+        </p>
+        <p>
+          I chose a master’s in Computer Science to give myself broader
+          opportunities. I wanted to stay in the software field, where I could
+          think deeply, work independently, and solve complex problems. I
+          explored NLP, Computer Vision, Cloud, and Python — and slowly realized
+          that AI and Machine Learning were the right fit for my mind and
+          passion.
+        </p>
+        <h3>🎯 My Life Aim</h3>
+        <p>
+          I aim to grow as an AI/ML developer, build real-world tools, and
+          contribute to innovative projects that help people understand or
+          interact with the world better — like smart assistants, educational
+          AI, or vision-based tools.
+        </p>
+        <p>
+          I believe in learning every day, and I’m currently building my own
+          tools in NLP and LLMs using LangChain, OpenAI, and HuggingFace. My
+          long-term vision is to contribute to impactful AI applications and
+          keep learning as the field evolves.
+        </p>
       </section>
 
-      <section id="projects" class="projects">
-        <h2>📊 Featured Projects</h2>
-        <p>Visit my GitHub to view all my hosted real-world projects:</p>
-        <ul>
-          <li>SoloLeveling Productivity Tool</li>
-          <li>Upcoming GenAI Projects</li>
-          <li>Robotics + CV + AI Tools</li>
-        </ul>
-      </section>
-
-      <section id="practice" class="practice">
-        <h2>✍️ Practice & Learning Logs</h2>
-        <p>Practice Markdown notes (.md) and code snippets on GitHub:</p>
-        <ul>
-          <li>Python learning notes</li>
-          <li>Machine Learning examples</li>
-          <li>Computer Vision experiments</li>
-        </ul>
-      </section>
-
-      <section id="links" class="links">
-        <h2>📌 Quick Links</h2>
-        <ul>
+      <!-- Education Timeline Like Andrej Style -->
+      <section id="education">
+        <h2>🎓 Education</h2>
+        <ul class="timeline">
           <li>
-            <a href="Resume_Shruti_Dayam.pdf" download>Download Resume (PDF)</a>
+            <div class="year">2023–2025</div>
+            <div class="details">
+              <strong>University of Bridgeport, USA</strong><br />
+              Master's in Computer Science<br />
+              GPA: 3.618 / 4.0
+            </div>
           </li>
           <li>
+            <div class="year">2018–2022</div>
+            <div class="details">
+              <strong>MVSR College of Engineering, India</strong><br />
+              Bachelor's in Mechanical Engineering<br />
+              CGPA: 7.73 / 10.0 (Distinction)
+            </div>
+          </li>
+          <li>
+            <div class="year">2016–2018</div>
+            <div class="details">
+              <strong>FIITJEE Junior College</strong><br />
+              CGPA: 8.56 | English & French
+            </div>
+          </li>
+          <li>
+            <div class="year">2009–2016</div>
+            <div class="details">
+              <strong>Chinmaya Vidyalaya School, Hyderabad</strong><br />
+              CGPA: 9.4 / 10.0 (CBSE)
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects">
+        <h2>📊 Featured Projects</h2>
+        <ul>
+          <li>
+            <strong>SoloLeveling Productivity Tool</strong> – Gamified Task
+            Manager | 2025
+          </li>
+          <li>
+            <strong>COMICS: Face Forgery Detection</strong> – Contrastive
+            Learning with CV | 2024
+          </li>
+          <li>
+            <strong>AWS Cloud Project</strong> – CLI-based Batch Upload &
+            Deployment | 2023
+          </li>
+          <li>
+            <strong>Vertical Axis Wind Turbine</strong> – Low Wind Mechanical
+            Project | 2022
+          </li>
+          <li>
+            <strong>BAJA SAE India</strong> – Brake System + Budget Lead (Final
+            Round) | 2020
+          </li>
+        </ul>
+      </section>
+
+      <!-- Practice Section -->
+      <section id="practice">
+        <h2>✍️ Practice & Learning Logs</h2>
+        <ul>
+          <li>Python, ML, and NLP notes (.md) on GitHub</li>
+          <li>Experiment logs for OpenCV, LangChain, and DL</li>
+        </ul>
+      </section>
+
+      <!-- Links Section -->
+      <section id="links">
+        <h2>📌 Links</h2>
+        <ul>
             <a href="https://github.com/sdayam7" target="_blank">GitHub</a>
           </li>
           <li>
@@ -97,13 +174,13 @@
               >LinkedIn</a
             >
           </li>
+          <li><a href="#top">🔝 Back to top</a></li>
         </ul>
-        <p><a href="#top">🔝 Back to top</a></p>
       </section>
     </main>
 
     <footer>
-      <p>© 2025 Shruti Dayam | Portfolio</p>
+      <p>© 2025 Shruti Dayam | AI + Robotics Portfolio</p>
     </footer>
 
     <script src="scripts.js"></script>

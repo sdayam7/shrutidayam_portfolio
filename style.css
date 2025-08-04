@@ -1,13 +1,13 @@
 /* Shruti Dayam Portfolio - style.css */
 
-/* === Light/Dark Theme Variables === */
 :root {
-  --bg: #f0f4ff;
-  --text: #333;
-  --header: #5b9bd5; /* Updated for header */
-  --nav: #2c3e50;
-  --card: #ffffff;
-  --shadow: #ccc;
+  --bg: #ffffff;
+  --text: #202020;
+  --header: #3aa6b9; /* greenish-blue */
+  --nav: #000000;
+  --card: #f4faff;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --gold: #d4af37;
 }
 
 .dark-mode {
@@ -19,7 +19,6 @@
   --shadow: #444;
 }
 
-/* === Base Styling === */
 body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -28,34 +27,42 @@ body {
   line-height: 1.6;
 }
 
-/* === Header === */
-header {
-  background-color: var(--header);
-  color: white;
-  padding: 2rem 1rem;
-  text-align: center;
-  position: relative;
+.intro-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: var(--card);
+  border-bottom: 3px solid var(--gold);
 }
 
-/* === Theme Toggle Button === */
-#theme-toggle {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  padding: 5px 12px;
-  font-size: 0.9rem;
-  background: #ffffff;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.3s ease;
+.profile-pic img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--gold);
+  box-shadow: 0 0 10px var(--header);
 }
 
-#theme-toggle:hover {
-  background: #e6e6e6;
+.intro-text h1 {
+  margin: 0;
+  font-size: 2rem;
 }
 
-/* === Navigation Bar === */
+.intro-text p {
+  margin: 0.5rem 0;
+}
+
+.contact-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: none;
+  color: var(--header);
+  font-weight: bold;
+}
+
 nav {
   background-color: var(--nav);
   padding: 1rem;
@@ -64,8 +71,8 @@ nav {
 
 nav ul {
   list-style-type: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 nav li {
@@ -83,38 +90,19 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* === Headings === */
 h2 {
-  color: #4a90e2;
+  color: var(--header);
   padding-top: 1rem;
 }
 
-/* === Sections === */
+h3 {
+  color: var(--gold);
+}
+
 section {
   padding: 2rem;
 }
 
-.container {
-  max-width: 800px;
-  margin: auto;
-}
-
-/* === Banner Section === */
-.banner {
-  background-color: #5b9bd5; /* Light blue like header */
-  color: white;
-  text-align: center;
-  padding: 40px 20px;
-  width: 100%;
-}
-
-.banner img {
-  width: 300px;
-  margin-top: 20px;
-  border-radius: 10px;
-}
-
-/* === Card-style Blocks === */
 .edu-block,
 .projects,
 .practice,
@@ -126,21 +114,64 @@ section {
   box-shadow: 0 0 10px var(--shadow);
 }
 
-/* === Links === */
-a {
-  color: #4a90e2;
-  text-decoration: none;
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-left: 3px solid var(--gold);
 }
 
-a:hover {
-  text-decoration: underline;
+.timeline li {
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+  position: relative;
 }
 
-/* === Footer === */
+.timeline .year {
+  font-weight: bold;
+  color: var(--header);
+  margin-bottom: 0.2rem;
+}
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -9px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  background-color: var(--gold);
+  border-radius: 50%;
+}
+
 footer {
   background-color: var(--nav);
   color: white;
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
+}
+
+a {
+  color: var(--header);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#theme-toggle {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  padding: 6px 10px;
+  background: white;
+  border: 1px solid var(--gold);
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+#theme-toggle:hover {
+  background-color: #eee;
 }

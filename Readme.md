@@ -1,4 +1,4 @@
-Shruti Dayam Portfolio Website
+# Shruti Dayam Portfolio Website
 
 Welcome to my personal portfolio website! This site showcases my educational background, featured projects, coding practice logs, and professional links.
 
